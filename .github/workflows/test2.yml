@@ -1,0 +1,10 @@
+name: アノテーションのテスト
+on:
+  push:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "::error::This is an error" # Errorレベルのアノテーション
+      - run: echo "::warning::This is a warning" # Warningレベルのアノテーション
+      - run: echo "::notice::This is a notice" # Noticeレベルのアノテーション
